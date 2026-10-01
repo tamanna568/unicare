@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f3f5;
+    color: #4969c6;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+    background-color: white;
+}
+
+nav h2 { 
+    font-size: 28px;
+    color:#4c5e86
+}
+
+.nav-links{
+    display: flex;
+    align-items:center;
+    gap: 30px;
+    flex-wrap: nowrap;
+
+}
+
+.nav-links a{
+   white-space: nowrap;
+}
+.login-box {
+    display:inline-block;
+    background-color: #6d95eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.login-box:hover { 
+    background-color: #377ee1;
+}
+.nav-links a:hover{
+    color: #183472;
+}
+
+.hero {
+    position:relative;
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    padding: 60px 9%;
+    background-color: #eaf4ff;
+    overflow: hidden;
+
+}
+
+.hero-text {
+    width: 50%;
+    z-index: 2;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    line-height: 1.15;
+    font-weight: 800;
+   margin-bottom:20px;
+   color: #102653;
+}
+
+.hero-text p {
+    font-size: 21px;
+    line-hight: 1.5;
+    color: #17366f;
+    margin-bottom: 30px;
+}
+.hero-text button {
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #377ee1;
+    color: rgb(238, 238, 242);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #6e88ad;
+}
+
+.hero-image {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image img { 
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.student-sticker {
+    
+    width: 100px;
+   max-width: 600px;
+   height: auto;
+}
+.services {
+   background-color: white;
+   padding: 50px 9%;
+   text-align: center;
+   margin-top: 100px;
+}
+.services h2 {
+    font-size: 40px;
+    color: #102653;
+    margin-bottom: 10px;
+}
+.service > p {
+    font-size: 20px;
+    color: #536789;
+    margin-bottom: 35px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.service-card {
+    background-color: #f8fafc;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    text-align:center;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color:#102653;
+}
+
+.service-card p {
+    color: #536789;
+    line-height: 1.5;
+}
+
+.service-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1677ff;
+    color: white;
+    font-size: 28px;
+}
+
+@media (max-width: 900px) {
+    nav{
+        padding: 20px 30px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 30px;
+    }
+    .hero-text  {
+        width: 100%;
+    }
+    .hero-text h1 {
+        font-size: 42px;
+    }
+    .hero-image {
+        width: 90%;
+        margin-top: 30px;
+    }
+    .student-sticker {
+        width: 150px;
+        right: 10px;
+        bottom: 10px;
+    }
+    
+    .service-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.logo-text {
+    font-size: 28px;
+    font-weight: 800;
+}
+.Uni {
+    color: #050c1a
+}
+.Care {
+    color:#377ee1
+    }
+.Welcome-logo {
+    color:#377ee1;
+    font-size: 70px;
+    font-weight: 800;
+}
